@@ -1,3 +1,10 @@
 page-home {
-
+	.icon-down-arrow::after {
+	    margin-left: 3px;
+	}
+	h2 {
+	    font-size: 17px;
+	    font-family: 'Roboto', sans-serif;
+	    font-weight: 700;
+	}
 }

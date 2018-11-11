@@ -1,17 +1,28 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Location 
+      <i class="icon icon-loaction-pin"></i>
+      <span>Plano <span class="icon-round-border"><i class="icon icon-down-arrow"></i></span></span>
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <h2>Featured</h2>
+  <section class="block block-container-scroll">
+    <div class="block-scroll--wrapper">
+      <figure class="block-scroll--image">
+        <!-- <img class="" alt="kitchen-img"> -->        
+      </figure>
+      <article>
+        <div class="title">My Kitchen - <span class="block-scroll---location">Plano</span></div>
+        <div class="block-scroll--sub-title">Indian - South Indian</div>
+        <div class="block-scroll--footer">
+          <span class="block-scroll---bg-gray">
+            <span>4.2 (150) <i class="icon icon-like-black"></i></span>
+          </span>
+        </div>
+      </article>
+    </div>
+  </section>
 </ion-content>
