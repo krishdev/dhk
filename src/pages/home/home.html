@@ -1,28 +1,88 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Location 
-      <i class="icon icon-loaction-pin"></i>
-      <span>Plano <span class="icon-round-border"><i class="icon icon-down-arrow"></i></span></span>
+    <ion-title class="c-header-title">
+    	<span class="c-header-title-location">Location <i class="icon icon-loaction-pin"></i></span>
+    	<span class="c-header-title-selected">Plano 
+    		<span class="icon-round-border"><i class="icon icon-down-arrow"></i></span>
+    	</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Featured</h2>
-  <section class="block block-container-scroll">
-    <div class="block-scroll--wrapper">
-      <figure class="block-scroll--image">
-        <!-- <img class="" alt="kitchen-img"> -->        
+  
+  	<section class="block block_scroll">
+  		<h2 class="block_scroll-title">Featured</h2>
+	    <div class="block_scroll-wrapper">
+	      	<figure class="block_scroll-img-wrap">
+	        	<img src="../assets/imgs/food.jpg" class="block_scroll-img" alt="kitchen-img">      
+	      	</figure>
+	      	<article class="block_scroll-content">
+		        <div class="block_scroll-content-title">My Kitchen - 
+		        	<span class="block_scroll-location">Plano</span>
+		        	<i class="fa fa-lg fa-thumbs-o-up" aria-hidden="true"></i>
+		        </div>
+		        <div class="block_scroll-sub-title">Indian - South Indian</div>
+		        <div class="block_scroll-footer">
+		          	<span class="block_scroll--bg-gray">
+		            	<span class="block_scroll--like">4.2 (150) <i class="fa fa-lg fa-thumbs-up" aria-hidden="true"></i></span>
+		         	</span>
+		          	<span class="block_scroll--bg-gray">Min 3 Days</span>
+		        </div>
+	      	</article>
+	    </div>
+  	</section>
+
+  <div class="block-divider"></div>
+
+  
+	<section class="block block_scroll">
+	  <h2 class="block_scroll-title">Popular</h2>
+	  <h3 class="block_scroll-title--sub">In this area</h3>
+	    <div class="block_scroll-wrapper">
+	      <figure class="block_scroll-img-wrap">
+	        <img src="../assets/imgs/food.jpg" class="block_scroll-img" alt="kitchen-img">      
+	      </figure>
+	      <article class="block_scroll-content">
+	        <div class="block_scroll-content-title">My Kitchen - 
+	            <span class="block_scroll-location">Plano</span>
+	          	<i class="fa fa-lg fa-thumbs-o-up" aria-hidden="true"></i>
+	        </div>
+	        <div class="block_scroll-sub-title">Indian - South Indian</div>
+	        <div class="block_scroll-footer">
+	          <span class="block_scroll--bg-gray">
+	            <span class="block_scroll--like">4.2 (150) <i class="fa fa-lg fa-thumbs-up" aria-hidden="true"></i></span>
+	          </span>
+	          <span class="block_scroll--bg-gray">Min 3 Days</span>
+	        </div>
+	      </article>
+	    </div>
+   </section>
+
+  <div class="block-divider"></div>
+
+  
+  <section class="block block_scroll">
+  <h2 class="block_scroll-title">Popular by Region</h2>
+    <div class="block_scroll-wrapper">
+	      <figure class="block_scroll-img-wrap">
+        <img src="../assets/imgs/food.jpg" class="block_scroll-img" alt="kitchen-img">      
       </figure>
-      <article>
-        <div class="title">My Kitchen - <span class="block-scroll---location">Plano</span></div>
-        <div class="block-scroll--sub-title">Indian - South Indian</div>
-        <div class="block-scroll--footer">
-          <span class="block-scroll---bg-gray">
-            <span>4.2 (150) <i class="icon icon-like-black"></i></span>
+      <article class="block_scroll-content">
+        <div class="block_scroll-content-title">My Kitchen - 
+        	<span class="block_scroll-location">Plano</span>
+        	<i class="fa fa-lg fa-thumbs-o-up" aria-hidden="true"></i>
+        </div>
+        <div class="block_scroll-sub-title">Indian - South Indian</div>
+        <div class="block_scroll-footer">
+          <span class="block_scroll--bg-gray">
+            <span class="block_scroll--like">4.2 (150) <i class="fa fa-lg fa-thumbs-up" aria-hidden="true"></i></span>
           </span>
+          <span class="block_scroll--bg-gray">Min 3 Days</span>
         </div>
       </article>
     </div>
   </section>
 </ion-content>
+
+

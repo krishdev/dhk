@@ -15,13 +15,32 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-.toolbar-background-ios {
+body {
+    font-family: $primary-font;
+    font-weight: $primary-weight;
+    font-size: 16px;
+
+}
+//header
+
+
+.c-header-title {
 	background: unset;
 	border: 0;
-	font: 12px 'Roboto', sans-serif;
-}
-.toolbar-ios ion-title {
-    padding: 0;
+    background-color: #F6F4F4;
+    border-bottom: 8px solid #E9E9E9;
+    padding: 0 !important;
+    text-align: left;
+
+    &-location {
+        font-weight: $bold-weight;
+        font-size: 0.85em;
+    }
+
+    &-selected {
+        font-weight: $primary-weight;
+        font-size: 0.85em;
+    }
 }
 
 .toolbar-title.toolbar-title-ios {
@@ -44,6 +63,8 @@
 }
 .icon-down-arrow:after {
     background-image: url(../assets/icon/down-arrow-small.svg);
+    margin-left: 3px;
+
 }
 .icon-home:after {
 	background-image: url(../assets/icon/home.svg);	
@@ -95,40 +116,125 @@
     background-size: contain;
 }
 
+//font awesome icons
+
+.fa-thumbs-up {
+    color: #747171;
+}
+
+.fa-thumbs-o-up {
+    color: #374f9b;
+    float: right;
+}
+
 /**
 * block items
 */
 
-.block-scroll--wrapper {
-    display: inline-block;
-    border: 1px solid #707070;
-    padding: 11px;
-    border-radius: 4px;
-    width: 268px;
-    height: 199px;
-}
-
-figure.block-scroll--image {
-    border: 1px solid #707070;
-    margin: 0;
+.block-divider {
     display: block;
-    width: 100%;
-    height: 108px;
+    border: 5px solid #eaeaea;
+    margin: 1em 0;
+
 }
 
-.block-scroll--wrapper > article {
-    padding: 11px 0;
+.scroll-content {
+    background-color: #F6F4F4;
+    padding: 0 !important;
 }
 
-.block-scroll--wrapper > article .title {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+.block_scroll {
+    padding: 20px;
+
+    &-title {
+        font-weight: 700;
+        font-size: 0.875em;
+        color: $primary-color;
+        margin-bottom: 0.5em;
+
+        &--sub {
+            font-size: 0.8em;
+            color: $light-gray;
+        }
+    }
+
+    &-wrapper {
+        display: inline-block;
+        padding: 11px;
+        border-radius: 4px;
+        width: 268px;
+        height: 199px;
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+
+    &-wrapper > article {
+        padding: 11px 0;
+    }
+
+    &-wrapper > article .title{
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+    }
+
+    &-img-wrap {
+        border: 1px solid #707070;
+        margin: 0;
+        display: block;
+        width: 100%;
+        height: 108px;
+    }
+
+    &-img {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    &-content-title {
+        color: #4fcf36;
+        font-size: 14px;
+        font-weight: $mediun-weight;
+    }
+
+    &-sub-title {
+        font-weight: $primary-weight;
+        padding: 3px 0;
+        color: $secondary-color;
+        font-size: 12px;
+    }
 }
 
-.block-scroll--sub-title {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    padding: 3px 0;
-}
+    .block_scroll-footer {
+        padding: 5px 0px;
+    }
+
+    .block_scroll--like {
+        padding: 5px 0px;
+    }
+
+    .block_scroll--bg-gray {
+        background: #E6E1E1;
+        font-size: 9px;
+        font-family: calibri;
+        padding: 5px;
+        margin-right: 10px;
+
+    }
+    .icon icon-like-blue::after {
+        background-image: url(../assets/icon/like-blue.svg);
+        content: " ";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .tabs-ios .tabbar {
+        background-color: #fff;
+    }
+
