@@ -6,9 +6,10 @@ import { MyApp } from './app.component';
 /**
 * Import Pages Here
 */
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { HomeComponent } from '../components/home/home';
+import { SearchComponent } from '../components/search/search';
+import { SearchResultsComponent } from '../components/search-results/search-results';
+import { ProfileComponent } from '../components/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -17,9 +18,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    HomeComponent,
+    SearchComponent,
+    SearchResultsComponent,
+    ProfileComponent,
     TabsPage
   ],
   imports: [
@@ -29,9 +31,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
+    HomeComponent,
+    SearchComponent,
+    SearchResultsComponent,
+    ProfileComponent,
     TabsPage
   ],
   providers: [

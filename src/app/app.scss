@@ -71,6 +71,7 @@ body {
 .icon-search:after {
 	background-image: url(../assets/icon/search.svg);	
 }
+
 .icon-like-black:after {
 	background-image: url(../assets/icon/like-black.svg);	
 }
@@ -94,7 +95,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.ion-ios-receipt-outline:before {
+.ion-ios-search-results-outline:before {
 	content: " ";
 	background-image: url(../assets/icon/logs.svg);	
 	display: inline-block;
@@ -104,7 +105,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.ion-ios-account-outline:before {
+.ion-ios-profile-outline:before {
 	content: " ";
 	background-image: url(../assets/icon/account.svg);	
 	display: inline-block;
@@ -275,12 +276,29 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        .display-title {
+            width: 50%;
+            height: auto;
+            position: relative;
+            opacity: 0.9;
+
+            p {
+                color: #fff;
+                font-size: 16px;
+                text-transform: uppercase;
+                text-align: center;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
 
     &-img {
-        width: 50%;
-        height: 150px;
-        max-width: 50%;
+        width: 100%;
+        height: 160px;
         padding: 0.5em;
         border-radius: 16px;
     }
