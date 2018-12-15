@@ -142,6 +142,10 @@ body {
     top: 10px;
 }
 
+.fa-clock{
+    color: #374f9b;
+}
+
 /**
 * block items
 */
@@ -178,6 +182,10 @@ body {
         width: 100%;
         min-width: 320px;
         background: #fff;
+
+        &-shadow{
+            box-shadow: #dedede 0 0 5px 5px;
+        }
     }
 
     &-wrapper > article {
@@ -246,6 +254,11 @@ body {
         vertical-align: middle;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+
+    .block_scroll--status {
+        font-weight: $primary-weight;
+        font-size: 12px;
     }
 
     .tabs-ios .tabbar {
