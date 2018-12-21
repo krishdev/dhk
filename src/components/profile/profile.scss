@@ -1,3 +1,12 @@
 profile {
-
+	.c-list-item {
+		border-top: none;
+		background-color: #F6F4F4;
+	}
+	.list-ios .item-block .item-inner {
+		border-bottom: none;
+	}
+	.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+		border-bottom: none;
+	}
 }

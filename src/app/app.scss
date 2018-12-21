@@ -27,7 +27,7 @@ body {
     background: unset;
 	border: 0;
     background-color: #F6F4F4;
-    border-bottom: 8px solid #E9E9E9;
+    border-bottom: 5px solid #E9E9E9;
     padding: 0 !important;
     text-align: left;
 
@@ -42,13 +42,28 @@ body {
     }
 }
 
+.c-header-search {
+    background-color: transparent;
+    border: none;
+    width: 80%;
+}
+
 .toolbar-title.toolbar-title-ios {
     text-align: left;
     padding: 0 16px;
     font-weight: 500;
     padding-top: 0.5em;
 }
-
+ion-header, ion-navbar {
+    height: 60px !important;//by default 56px
+}
+.ios ion-tab > .ion-page > ion-header > .toolbar.statusbar-padding:first-child ion-title {
+    height: 100% !important;
+    min-height: unset;
+}
+.fixed-content, .scroll-content{
+    margin-top:50px !important;
+}
 .icon:after {	
     content: " ";
     display: inline-block;
@@ -129,21 +144,17 @@ body {
 
 .fa-search{
     opacity: 0.2;
-    position: absolute;
-    top: 10px;
-    left: 20px;
 }
 
-.fa-arrow-right {
+.fa-paper-plane {
     color: #374f9b;
     cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 10px;
 }
 
-.fa-clock{
+.fa-clock-o, .fa-bookmark {
     color: #374f9b;
+    float: right;
+    margin-right: 0.5em;
 }
 
 /**
@@ -163,11 +174,13 @@ body {
 .block_scroll {
     padding: 20px;
 
+
     &-title {
         font-weight: 700;
         font-size: 1em;
         color: $primary-color;
         margin-bottom: 0.5em;
+        position: relative;
 
         &--sub {
             font-size: 0.8em;
@@ -176,15 +189,28 @@ body {
     }
 
     &-wrapper {
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-right: 10px;
+    }
+
+    &-item {
         display: inline-block;
         padding: 11px;
         border-radius: 4px;
         width: 100%;
-        min-width: 320px;
+        min-width: 295px;
         background: #fff;
+        margin-right: 10px;
 
         &-shadow{
             box-shadow: #dedede 0 0 5px 5px;
+        }
+
+        &-result {
+            min-width: 320px;
         }
     }
 
@@ -206,8 +232,13 @@ body {
 
     &-img {
         width: 100%;
+        background-size: cover;
         height: 140px;
         margin: 0 auto;
+    }
+
+    &-content {
+    margin-top: 10px;
     }
 
     &-content-title {
@@ -235,6 +266,13 @@ body {
 
     .block_scroll--like {
         padding: 5px 0px;
+    }
+
+    .block_scroll-img {
+        width: 100%;
+        background-size: cover;
+        height: 160px;
+        background-repeat: no-repeat;
     }
 
     .block_scroll--bg-gray {
@@ -291,29 +329,40 @@ body {
         flex-wrap: wrap;
 
         .display-title {
-            width: 50%;
+            flex: 0 0 49%;
             height: auto;
             position: relative;
-            opacity: 0.9;
+            margin-bottom: 0.5em;
 
             p {
                 color: #fff;
+                font-weight: $bold-weight;
                 font-size: 16px;
                 text-transform: uppercase;
                 text-align: center;
+                margin: 0;
+                position: relative;
+                top: 50%;
+
+            }
+            .overlay {
+                display: block;
                 position: absolute;
-                top: 40%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                opacity: 0.6;
             }
         }
     }
 
     &-img {
+        max-width: 100%;
         width: 100%;
         height: 160px;
-        padding: 0.5em;
-        border-radius: 16px;
     }
 
     &-img:nth-child(odd){

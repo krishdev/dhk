@@ -1,6 +1,9 @@
 <ion-header>
     <ion-navbar>
-      <ion-title>
+      <ion-title class="c-header-title">
+      <i class="fa fa-search"></i>
+        <input class="c-header-search" id="search" type="text" placeholder="Search">
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
       </ion-title>
     </ion-navbar>
   </ion-header>
@@ -8,37 +11,47 @@
   <ion-content padding>
   
     <section class="block block_input">
-        <i class="fa fa-search"></i>
-        <input id="search" type="text" placeholder="Search">
-        <i class="fa fa-arrow-right"></i>
+        
     </section>
   
     <section class="block block_scroll">
       <h2 class="block_scroll-title">Popular Picks</h2>
         <figure class="block_search-img-wrap">
           <div class="display-title">
-              <img src="../assets/imgs/idly.jpeg" class="block_search-img" alt="idly-img">
-              <p>Idly</p>
+            <div style="background-image: url('/assets/imgs/idly.jpeg')" class="block_scroll-img" alt="idly-img"> </div> 
+              <div class="overlay">
+                <p>Idly</p>
+              </div>
           </div>
           <div class="display-title">
-              <img src="../assets/imgs/dosa.jpg" class="block_search-img" alt="dosa-img">
-              <p>Dosa</p>
+              <div style="background-image: url('/assets/imgs/dosa.jpg')" class="block_scroll-img" alt="dosa-img"> </div> 
+              <div class="overlay">
+                <p>Dosa</p>
+              </div>
           </div>
           <div class="display-title">
-              <img src="../assets/imgs/chapathi.jpg" class="block_search-img" alt="chapathi-img">
-              <p>Chapathi</p>
+              <div style="background-image: url('/assets/imgs/chapathi.jpg')" class="block_scroll-img" alt="chapathi-img"> </div> 
+              <div class="overlay">
+                <p>Chapathi</p>
+              </div>
           </div>
           <div class="display-title">
-              <img src="../assets/imgs/thali.jpg" class="block_search-img" alt="thali-img">
-              <p>Thali</p>
+              <div style="background-image: url('/assets/imgs/thali.jpg')" class="block_scroll-img" alt="thali-img"> </div> 
+              <div class="overlay">
+                <p>Thali</p>
+              </div>
           </div>
           <div class="display-title">
-              <img src="../assets/imgs/veg-curry.jpg" class="block_search-img" alt="veg-curry-img">
-              <p>Veg Curry</p>
+              <div style="background-image: url('/assets/imgs/veg-curry.jpg')" class="block_scroll-img" alt="veg-curry-img"> </div> 
+              <div class="overlay">
+                <p>Veg Curry</p>
+              </div>
           </div>
           <div class="display-title">
-              <img src="../assets/imgs/chicken-curry.jpg" class="block_search-img" alt="chicken-curry-img">
-              <p>Chicken Curry</p>
+              <div style="background-image: url('/assets/imgs/chicken-curry.jpg')" class="block_scroll-img" alt="chicken-curry-img"> </div> 
+              <div class="overlay">
+                <p>Chicken Curry</p>
+              </div>
           </div>
         </figure>
     </section>
