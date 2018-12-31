@@ -44,8 +44,11 @@ body {
 
 .c-header-search {
     background-color: transparent;
-    border: none;
+    font-family: $primary-font;
+    font-weight: $light-weight;
+    padding: 10px;
     width: 80%;
+    border: none;
 }
 
 .toolbar-title.toolbar-title-ios {
@@ -151,7 +154,7 @@ ion-header, ion-navbar {
     cursor: pointer;
 }
 
-.fa-clock-o, .fa-bookmark {
+.fa-clock-o, .fa-bookmark, .fa-check {
     color: #374f9b;
     float: right;
     margin-right: 0.5em;
@@ -174,7 +177,6 @@ ion-header, ion-navbar {
 .block_scroll {
     padding: 20px;
 
-
     &-title {
         font-weight: 700;
         font-size: 1em;
@@ -193,7 +195,6 @@ ion-header, ion-navbar {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin-right: 10px;
     }
 
     &-item {
@@ -204,14 +205,13 @@ ion-header, ion-navbar {
         min-width: 295px;
         background: #fff;
         margin-right: 10px;
+    }
 
-        &-shadow{
-            box-shadow: #dedede 0 0 5px 5px;
-        }
-
-        &-result {
-            min-width: 320px;
-        }
+    &-item-status {
+        background: #fff;
+        padding: 10px;
+        max-width: 320px;
+        box-shadow: #dedede 0 0 5px 5px;
     }
 
     &-wrapper > article {
@@ -238,7 +238,7 @@ ion-header, ion-navbar {
     }
 
     &-content {
-    margin-top: 10px;
+        margin-top: 10px;
     }
 
     &-content-title {
@@ -301,22 +301,6 @@ ion-header, ion-navbar {
 
     .tabs-ios .tabbar {
         background-color: #fff;
-    }
-}
-
-.block_input{
-
-    position: relative;
-    font-size: 16px;
-    font-family: $primary-font;
-    font-weight: $light-weight;
-    background-color: #fff;
-
-    #search{
-        border: 0;
-        width: 100%;
-        padding: 10px;
-        text-indent: 40px;
     }
 }
 
