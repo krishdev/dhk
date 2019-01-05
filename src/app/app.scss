@@ -113,7 +113,7 @@ ion-header, ion-navbar {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.ion-ios-search-results-outline:before {
+.ion-ios-status-outline:before {
 	content: " ";
 	background-image: url(../assets/icon/logs.svg);	
 	display: inline-block;
@@ -154,7 +154,7 @@ ion-header, ion-navbar {
     cursor: pointer;
 }
 
-.fa-clock-o, .fa-bookmark, .fa-check {
+.fa-clock-o, .fa-bookmark, .fa-check, .fa-arrow-right {
     color: #374f9b;
     float: right;
     margin-right: 0.5em;
@@ -258,6 +258,15 @@ ion-header, ion-navbar {
         width: 150px;
         height: 150px;
         border-radius: 25px;
+    }
+
+    &-header {
+        height: 30px;
+        margin-top: 10px;
+
+        h2 {
+            float: left;
+        }
     }
 
     .block_scroll-footer {

@@ -9,6 +9,7 @@ import { MyApp } from './app.component';
 import { HomeComponent } from '../components/home/home';
 import { SearchComponent } from '../components/search/search';
 import { SearchResultsComponent } from '../components/search-results/search-results';
+import { StatusComponent } from '../components/status/status';
 import { ProfileComponent } from '../components/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -21,6 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomeComponent,
     SearchComponent,
     SearchResultsComponent,
+    StatusComponent,
     ProfileComponent,
     TabsPage
   ],
@@ -34,6 +36,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomeComponent,
     SearchComponent,
     SearchResultsComponent,
+    StatusComponent,
     ProfileComponent,
     TabsPage
   ],
