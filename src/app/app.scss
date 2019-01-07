@@ -176,7 +176,9 @@ ion-header, ion-navbar {
 
 .block_scroll {
     padding: 20px;
-
+    h2 {
+        padding-top: 1em;
+    }
     &-title {
         font-weight: 700;
         font-size: 1em;
@@ -326,7 +328,7 @@ ion-header, ion-navbar {
                 text-align: center;
                 margin: 0;
                 position: relative;
-                top: 50%;
+                top: 45%;
 
             }
             .overlay {

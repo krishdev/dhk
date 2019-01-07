@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { KitchenService } from '../../app/services/kitchen.service';
+declare var $: any;
 /**
  * Generated class for the HomeComponent component.
  *
@@ -10,12 +11,27 @@ import { Component } from '@angular/core';
   selector: 'home',
   templateUrl: 'home.html'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   text: string;
 
-  constructor() {
-   
+  kitchens: any;
+  isFetching: boolean = false;
+
+  constructor(
+    public kitchenService: KitchenService
+  ) { }
+
+  ngOnInit() {
+    this.isFetching= true;
+    this.kitchenService.getAllKitchen().subscribe((data)=>{
+      this.isFetching= false;
+      if(data && data.length) {
+        this.kitchens = data;
+      } else {
+
+      }
+    })
   }
 
 }
