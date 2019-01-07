@@ -10,6 +10,7 @@ import { HttpModule } from '@angular/http';
 import { HomeComponent } from '../components/home/home';
 import { SearchComponent } from '../components/search/search';
 import { SearchResultsComponent } from '../components/search-results/search-results';
+import { StatusComponent } from '../components/status/status';
 import { ProfileComponent } from '../components/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -24,6 +25,7 @@ import { KitchenService } from './services/kitchen.service';
     HomeComponent,
     SearchComponent,
     SearchResultsComponent,
+    StatusComponent,
     ProfileComponent,
     TabsPage
   ],
@@ -38,6 +40,7 @@ import { KitchenService } from './services/kitchen.service';
     HomeComponent,
     SearchComponent,
     SearchResultsComponent,
+    StatusComponent,
     ProfileComponent,
     TabsPage
   ],

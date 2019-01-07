@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { HomeComponent } from '../../components/home/home';
 import { SearchComponent } from '../../components/search/search';
-import { SearchResultsComponent } from '../../components/search-results/search-results';
+import { StatusComponent } from '../../components/status/status';
 import { ProfileComponent } from '../../components/profile/profile';
 
 @Component({
@@ -12,7 +12,7 @@ export class TabsPage {
 
   tab1Root = HomeComponent;
   tab2Root = SearchComponent;
-  tab3Root = SearchResultsComponent;
+  tab3Root = StatusComponent;
   tab4Root = ProfileComponent;
 
   constructor() {
