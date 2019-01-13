@@ -12,6 +12,7 @@ import { SearchComponent } from '../components/search/search';
 import { SearchResultsComponent } from '../components/search-results/search-results';
 import { StatusComponent } from '../components/status/status';
 import { ProfileComponent } from '../components/profile/profile';
+import { HomeLandingComponent } from '../components/home-landing/home-landing';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -27,6 +28,7 @@ import { KitchenService } from './services/kitchen.service';
     SearchResultsComponent,
     StatusComponent,
     ProfileComponent,
+    HomeLandingComponent,
     TabsPage
   ],
   imports: [
@@ -42,6 +44,7 @@ import { KitchenService } from './services/kitchen.service';
     SearchResultsComponent,
     StatusComponent,
     ProfileComponent,
+    HomeLandingComponent,
     TabsPage
   ],
   providers: [

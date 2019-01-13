@@ -4,17 +4,20 @@ import { SearchComponent } from './search/search';
 import { SearchResultsComponent } from './search-results/search-results';
 import { StatusComponent } from './status/status';
 import { ProfileComponent } from './profile/profile';
+import { HomeLandingComponent } from './home-landing/home-landing';
 @NgModule({
 	declarations: [HomeComponent,
     SearchComponent,
     SearchResultsComponent,
     StatusComponent,
-    ProfileComponent],
+    ProfileComponent,
+    HomeLandingComponent],
 	imports: [],
 	exports: [HomeComponent,
     SearchComponent,
     SearchResultsComponent,
     StatusComponent,
-    ProfileComponent]
+    ProfileComponent,
+    HomeLandingComponent]
 })
 export class ComponentsModule {}

@@ -160,6 +160,9 @@ ion-header, ion-navbar {
     margin-right: 0.5em;
 }
 
+.fa-star {
+    color: #ffd700;
+}
 /**
 * block items
 */
@@ -193,6 +196,7 @@ ion-header, ion-navbar {
     }
 
     &-wrapper {
+        padding: 0 15px;
         overflow-x: auto;
         display: flex;
         flex-direction: row;
@@ -366,5 +370,71 @@ ion-header, ion-navbar {
 
     &-img:nth-child(even){
         padding-right: 0;
+    }
+}
+
+.block_landing {
+    background-color: #eaeaea;
+
+    &-title {
+        font-size: 14px;
+    }
+
+    .landing-img {
+        height: 200px;
+        opacity: 1;
+    }
+
+    &-content {
+        color: #fff;
+        padding: 20px;
+        padding-top: 8em;
+    }
+
+    &-main {
+        font-weight: $medium-weight;
+        font-size: 18px;
+    }
+
+    &-sub {
+        font-weight: $light-weight;
+    }
+
+    &-info {
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    &-items-wrap {
+        padding: 15px;
+    }
+
+    &-items {
+        background-color: #fff;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 10px;
+
+        img {
+            float: right;
+            width: 35%;
+            height: 120px;
+        }
+    }
+
+    &-item-info {
+        width: 65%;
+        padding: 10px;
+        float: left;
+    }
+
+    &-item-name {
+        font-weight: $medium-weight;
+        font-size: 16px;
+        color: green;
+    }
+
+    &-item-price {
+        float: right;
     }
 }
