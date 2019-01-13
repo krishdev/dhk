@@ -60,10 +60,10 @@ body {
 ion-header, ion-navbar {
     height: 60px !important;//by default 56px
 }
-// .ios ion-tab > .ion-page > ion-header > .toolbar.statusbar-padding:first-child ion-title {
-//     height: 100% !important;
-//     min-height: unset;
-// }
+.ios ion-tab > .ion-page > ion-header > .toolbar.statusbar-padding:first-child ion-title {
+    height: 100% !important;
+    min-height: unset;
+}
 .fixed-content, .scroll-content{
     margin-top:50px !important;
 }
