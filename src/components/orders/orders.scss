@@ -1,0 +1,79 @@
+orders {
+	.c-orders-block {
+	  	padding: 20px;
+	  	font-weight:700;
+
+		 .item-ios {
+		  	background-color: #f6f4f4;
+		  	padding: 0;
+		 }
+
+		 .item-inner {
+		 	border: none;
+		 }
+	}
+
+	.c-orders-title {
+		display: inline-block;
+	}
+
+	.c-orders-price {
+		display: inline-block;
+		float: right;
+	}
+
+	.c-orders-description {
+		font-weight:500;
+		margin: 0;
+		padding: 0;
+	}
+
+	.c-quantity-block {
+	  margin-top: 15px;
+	  display: block;
+	} 
+
+	h2 {
+	  font-size: 16px;
+	  font-weight: 700;
+	  margin:0 0 0.5em 0;
+	  padding: 10px 20px;
+	  background-color: #f2efef;
+	}
+	p {
+	  margin: 0;
+	  padding: 0;
+	}
+	.c-quantity-input {
+	  max-width: 40px;
+	}
+	.c-quantity-select {
+	  max-width: 50px;
+	}
+	.submit-button {
+	  width: 100%;
+	  background-color: #ed8029;
+	  margin-top: 3em;
+	  border: none;
+	  padding: 10px;
+	    color: #fff;
+	  font-size: 16px;
+	}
+
+	.quantity-inputs {
+	  float: left;
+	}
+
+	.c-quantity-icons {
+	  float: right;
+	  margin-right:0.5em;
+	}
+
+	.c-quantity-textarea {
+		border:none;
+	}
+
+	.instructions,.spice {
+	  margin-top: 20px;
+	}
+}

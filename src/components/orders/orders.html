@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+          
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+        <div style="background-image: url('/assets/imgs/home-img1.jpg')" class="block_scroll-img" alt="kitchen-img"> </div> 
+        <div class="c-orders-block">
+            <span class="c-orders-title">Dosa</span>
+            <span class="c-orders-price"> $13.00</span>
+            <p class="c-orders-description">Sount Indian - Tiffin</p>
+        </div>
+
+            <div class="c-quantity-block">
+                <h2 class="head">Quantity</h2>
+                
+                <div class="c-orders-block">
+
+                 <form method="post" action="">
+                
+                    <input type="text" name="quantity" id="quantity" class="c-quantity-input"> 
+                    <select class="c-quantity-select">
+                        <option value="default"></option>
+                          <option value="kgs">Kgs</option>
+                          <option value="lbs">Lbs</option>
+                          <option value="pieces">pieces</option>
+                    </select>        
+               
+                    <i class="fa fa-lg fa-plus-square c-quantity-icons"></i>
+                    <i class="fa fa-lg fa-minus-square c-quantity-icons"></i>
+                </form>
+            </div>
+              </div>
+                 <div class="spice">
+                    <h2 class="head">Spice Level</h2>
+                    
+                    <div class="c-orders-block">
+                        <ion-item>
+                            <ion-label>Mild</ion-label>
+                              <ion-checkbox color="dark" checked="true"></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-label>Medium</ion-label>
+                          <ion-checkbox disabled="true"></ion-checkbox>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-label>Spicy</ion-label>
+                          <ion-checkbox disabled="true"></ion-checkbox>
+                        </ion-item>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <h2 class="head">Special Instructions</h2>
+                    
+                </div>
+        
+            <input type="submit" value="Add to Cart" id="submit" class="submit-button">
+            
+  </ion-content>
+
